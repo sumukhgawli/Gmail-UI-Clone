@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmail ui clone</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="disapear()">
+  <div id="loader"></div>
+  <div class="scr_alrt">
+    <div class="cen">
+      <div class="gmail_ico">  
+        <img src="gmail_icon.png" alt="gmail icon" id="gmail_i">
+      </div>
+      <div id="text">TO USE GMAIL IN SMALL DEVICES GET THE APP</div>
+      <div class="download"><a href="https://play.google.com/store/apps/details?id=com.google.android.gm"> <img id='play_str' src="download (1).png" alt="google play store" style="height: 60px; width: 120px;"></a></div> 
+    </div>
+
+  </div>
+  <div class="con_all" id="con1_all">
+    <div class="nav_main">
+    <div class="nav_left">
+      <input type="checkbox" id='res_menu'>
+      <label for="res_menu" class="res_check">
+      <span class="material-icons"><a href="#" title="Main Menu">menu</a> </span></label>
+      <img src="gmail_icon.png" alt="Gmail Icon" />
+    </div>
+
+    <div class="nav_middle">
+      <span class="material-icons"><a href="#" title="Search">search </a> </span>
+      <input type="text" placeholder="Search mail" />
+      <span class="material-icons"><a href="#" title="Show more options">arrow_drop_down</a> </span>
+    </div>
+
+    <div class="nav_right">
+      <span class="material-icons" id='apps_icon'><a href="#" title="Apps">apps</a> </span>
+      <span class="material-icons" id='noti_icon'><a href="#" title="Notifications">notifications</a> </span>
+      <span class="material-icons"><a href="#" title="Accounts">account_circle</a> </span>
+    </div>
+    </div>
+    <div class="main_body">
+      <div class="sidebar">
+      <button class="sidebar__compose">
+        <span class="material-icons"> add </span>Compose</button>
+      <div class="sidebarOption inbox1">
+        <span class="material-icons"><a href="#" title="Inbox">inbox</a> </span>
+        <h3>Inbox</h3>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"><a href="#" title="Star">star</a> </span>
+        <h3>Starred</h3>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"><a href="#" title="Snoozed">access_time</a> </span>
+        <h3>Snoozed</h3>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"><a href="#" title="Important">label_important</a> </span>
+        <h3>Important</h3>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"><a href="#" title="Sent">near_me</a> </span>
+        <h3>Sent</h3>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"><a href="#" title="Drafts">note</a> </span>
+        <h3>Drafts</h3>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"><a href="#" title="More options">expand_more</a> </span>
+        <h3>More</h3>
+      </div>
+
+      <div class="sidebar_footer">
+        <div class="sidebar__footerIcons">
+          <span class="material-icons"> person </span>
+          <span class="material-icons"> duo </span>
+          <span class="material-icons"> phone </span>
+        </div>
+      </div>
+      </div>
+      <div class="left_main">
+        <div class="nav_sec">
+        <div class="nav_s_left">
+          <a href="#" title="Select all"><input type="checkbox" /></a>
+          <span class="material-icons"><a href="#" title="More options">arrow_drop_down</a>  </span>
+          <span class="material-icons"><a href="#" title="Refresh">redo</a>  </span>
+          <span class="material-icons"><a href="#" title="Options">more_vert</a>  </span>
+        </div>
+        <div class="nav_s_right">
+          <span class="material-icons"> chevron_left </span>
+          <span class="material-icons"> chevron_right </span>
+          <span class="material-icons"> keyboard_hide </span>
+          <span class="material-icons"> settings </span>
+        </div>
+        </div>
+      
+        <div class="mail_sections">
+          <div class="section inbox">
+            <span class="material-icons"> inbox </span>
+            <h4>Primary</h4>
+          </div>
+
+          <div class="section">
+            <span class="material-icons"> people </span>
+            <h4>Social</h4>
+          </div>
+
+          <div class="section">
+            <span class="material-icons"> local_offer </span>
+            <h4>Promotions</h4>
+          </div>
+          
+        </div>
+      
+        <div class="emailRow">
+        <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+        </div>
+
+        <h3 class="emailRow__title">Google</h3>
+
+        <div class="emailRow__message">
+          <h4>
+            Login on New Device<span class="emailRow__description">
+              - is this your Device ?
+            </span>
+          </h4>
+        </div>
+
+        <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+        <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+        </div>
+
+        <h3 class="emailRow__title">Linkedin</h3>
+
+        <div class="emailRow__message">
+          <h4>
+            missed notifications<span class="emailRow__description">
+              - check out for new notifications
+            </span>
+          </h4>
+        </div>
+
+        <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+        <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+        </div>
+
+        <h3 class="emailRow__title">Google</h3>
+
+        <div class="emailRow__message">
+          <h4>
+            Login on New Device<span class="emailRow__description">
+              - is this your Device ?
+            </span>
+          </h4>
+        </div>
+
+        <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+        <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+        </div>
+
+        <h3 class="emailRow__title">Youtube</h3>
+
+        <div class="emailRow__message">
+          <h4>
+            someone liked your comment<span class="emailRow__description">
+              - check out the comment
+            </span>
+          </h4>
+        </div>
+
+        <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+        <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+        </div>
+
+        <h3 class="emailRow__title">Hackerrank</h3>
+
+        <div class="emailRow__message">
+          <h4>
+            Login on New Device<span class="emailRow__description">
+              - opt is ****
+            </span>
+          </h4>
+        </div>
+
+        <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+        <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+        </div>
+
+        <h3 class="emailRow__title">Magicbricks</h3>
+
+        <div class="emailRow__message">
+          <h4>
+            Best property offer<span class="emailRow__description">
+              - 2 bhk available
+            </span>
+          </h4>
+        </div>
+
+        <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+        <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+        </div>
+
+        <h3 class="emailRow__title">Flipkart</h3>
+
+        <div class="emailRow__message">
+          <h4>
+            90% off on electronics<span class="emailRow__description">
+              - avail this offer now
+            </span>
+          </h4>
+        </div>
+
+        <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+        <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+        </div>
+
+        <h3 class="emailRow__title">Amazon</h3>
+
+        <div class="emailRow__message">
+          <h4>
+            Prime subscription<span class="emailRow__description">
+              - renew your prime membership
+            </span>
+          </h4>
+        </div>
+
+        <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+        <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+        </div>
+
+        <h3 class="emailRow__title">Google</h3>
+
+        <div class="emailRow__message">
+          <h4>
+            Login on New Device<span class="emailRow__description">
+              - is this your Device ?
+            </span>
+          </h4>
+        </div>
+
+        <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+        <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+        </div>
+
+        <h3 class="emailRow__title">Google</h3>
+
+        <div class="emailRow__message">
+          <h4>
+            Login on New Device<span class="emailRow__description">
+              - is this your Device ?
+            </span>
+          </h4>
+        </div>
+
+        <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+        <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+        </div>
+
+        <h3 class="emailRow__title">Google</h3>
+
+        <div class="emailRow__message">
+          <h4>
+            Login on New Device<span class="emailRow__description">
+              - is this your Device ?
+            </span>
+          </h4>
+        </div>
+
+        <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+        <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+        </div>
+
+        <h3 class="emailRow__title">Google</h3>
+
+        <div class="emailRow__message">
+          <h4>
+            Login on New Device<span class="emailRow__description">
+              - is this your Device ?
+            </span>
+          </h4>
+        </div>
+
+        <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+        <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+        </div>
+
+        <h3 class="emailRow__title">Google</h3>
+
+        <div class="emailRow__message">
+          <h4>
+            Login on New Device<span class="emailRow__description">
+              - is this your Device ?
+            </span>
+          </h4>
+        </div>
+
+        <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+        <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+        </div>
+
+        <h3 class="emailRow__title">Google</h3>
+
+        <div class="emailRow__message">
+          <h4>
+            Login on New Device<span class="emailRow__description">
+              - is this your Device ?
+            </span>
+          </h4>
+        </div>
+
+        <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+        <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+        </div>
+
+        <h3 class="emailRow__title">Google</h3>
+
+        <div class="emailRow__message">
+          <h4>
+            Login on New Device<span class="emailRow__description">
+              - is this your Device ?
+            </span>
+          </h4>
+        </div>
+
+        <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+        <div class="emailRow__options">
+          <input type="checkbox" name="" id="" />
+          <span class="material-icons"> star_border </span>
+        </div>
+
+        <h3 class="emailRow__title">Google</h3>
+
+        <div class="emailRow__message">
+          <h4>
+            Login on New Device<span class="emailRow__description">
+              - is this your Device ?
+            </span>
+          </h4>
+        </div>
+
+        <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <span class="material-icons"> star_border </span>
+          </div>
+  
+          <h3 class="emailRow__title">Google</h3>
+  
+          <div class="emailRow__message">
+            <h4>
+              Login on New Device<span class="emailRow__description">
+                - is this your Device ?
+              </span>
+            </h4>
+          </div>
+  
+          <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <span class="material-icons"> star_border </span>
+          </div>
+  
+          <h3 class="emailRow__title">Google</h3>
+  
+          <div class="emailRow__message">
+            <h4>
+              Login on New Device<span class="emailRow__description">
+                - is this your Device ?
+              </span>
+            </h4>
+          </div>
+  
+          <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <span class="material-icons"> star_border </span>
+          </div>
+  
+          <h3 class="emailRow__title">Google</h3>
+  
+          <div class="emailRow__message">
+            <h4>
+              Login on New Device<span class="emailRow__description">
+                - is this your Device ?
+              </span>
+            </h4>
+          </div>
+  
+          <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <span class="material-icons"> star_border </span>
+          </div>
+  
+          <h3 class="emailRow__title">Google</h3>
+  
+          <div class="emailRow__message">
+            <h4>
+              Login on New Device<span class="emailRow__description">
+                - is this your Device ?
+              </span>
+            </h4>
+          </div>
+  
+          <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <span class="material-icons"> star_border </span>
+          </div>
+  
+          <h3 class="emailRow__title">Google</h3>
+  
+          <div class="emailRow__message">
+            <h4>
+              Login on New Device<span class="emailRow__description">
+                - is this your Device ?
+              </span>
+            </h4>
+          </div>
+  
+          <p class="emailRow__time">2am</p>
+        </div>
+        <div class="emailRow">
+          <div class="emailRow__options">
+            <input type="checkbox" name="" id="" />
+            <span class="material-icons"> star_border </span>
+          </div>
+  
+          <h3 class="emailRow__title">Google</h3>
+  
+          <div class="emailRow__message">
+            <h4>
+              Login on New Device<span class="emailRow__description">
+                - is this your Device ?
+              </span>
+            </h4>
+          </div>
+  
+          <p class="emailRow__time">2am</p>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+</body>
+<script>
+  var ploader = document.getElementById('loader');
+  console.log(ploader);
+  var mai_con = document.getElementById('con1_all');
+  console.log(mai_con);
+  
+  function disapear() {
+    mai_con.style.display = 'none';
+    setTimeout(function actual() {
+    ploader.style.display = 'none';
+    mai_con.style.display = 'block';
+    },4000); 
+
+  }
+  
+</script>
